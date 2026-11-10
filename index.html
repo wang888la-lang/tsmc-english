@@ -71,4 +71,5 @@ $('clearStats').addEventListener('click',()=>{
  reset();start();
 });
 $('prev').addEventListener('click',()=>{if(idx>0){idx--;showQuestion()}});$('historySearch').addEventListener('input',renderHistory);$('start').addEventListener('click',start);$('next').addEventListener('click',()=>{idx++;showQuestion()});$('speak').addEventListener('click',()=>{if(current)speak(current.en)});$('spellSubmit').addEventListener('click',()=>answer($('spellInput').value,current.en));$('spellInput').addEventListener('keydown',e=>{if(e.key==='Enter'&&!locked)answer($('spellInput').value,current.en)});$('search').addEventListener('input',renderList);save();
+ 
 </script></body></html>
